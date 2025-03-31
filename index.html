@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MUCG Workshop @ ACM 2025</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for this page -->
+  <style>
+    /* Orange color for section titles */
+    .section h3 {
+      color: #ff8c00; /* Orange color */
+      text-align: left; /* Align titles to the left */
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ff8c00;
+    }
+
+    /* Smaller font size for topic cards' headings */
+    .topic-card h4 {
+      font-size: 18px; /* Smaller font size */
+    }
+
+    .agenda-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .agenda-table th, .agenda-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .agenda-table th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
+
+    .agenda-table tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    .agenda-table tr:hover {
+      background-color: #e9ecef;
+    }
+
+    .schedule h3 {
+      color: #ff8c00; /* Orange color */
+      text-align: center;
+    }
+
+    /* Team Section Styles */
+    .team .section-title h2 {
+      color: #ff8c00;
+      text-align: center; /* Center align the title */
+      margin-bottom: 30px;
+    }
+
+    .team .member {
+      margin-bottom: 30px;
+    }
+
+    .team .member-img {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 15px;
+    }
+
+    .team .member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team .member-info h4 {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .team .member-info span {
+      display: block;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between" style="height: 20px">
+
+      <a href="./" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">MUCG 2025</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./" class="active">Overview</a></li>
+          <li><a href="./#target">Target Audience</a></li>
+          <li><a href="./#topics">Topics</a></li>
+          <li><a href="./#agenda">Schedule</a></li>
+          <li><a href="./#activities">Activities</a></li>
+          <li><a href="./#call">Cal for Papers</a></li>
+          <li><a href="./#organizer">Organization Team</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/dublin.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10" style="margin-left: 50px;margin-bottom: -50px;">
+            <h1 data-aos="fade-up" data-aos-delay="100">MUCG @ ACM 2025</h1>
+            <br>
+            <h3 data-aos="fade-up" data-aos-delay="100">The 1st International Workshop on MLLM for Unified Comprehension and Generation</h3>
+            <br>
+            <p data-aos="fade-up" data-aos-delay="200">Dublin, Ireland</p>
+            <p data-aos="fade-up" data-aos-delay="200">October 27-October 31, 2025</p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="    margin-top: -30px;">
+        <div class="row align-items-xl-center gy-2">
+
+          <div class="content">
+            <h3 style="margin-bottom: 30px;">Workshop Introduction</h3>
+            <p align="justify">As Multimodal Large Language Models (MLLMs) continue to advance, there is a growing need to bridge the gap between their comprehension and generation capabilities within unified frameworks. This workshop <b>MLLM for Unified Comprehension and Generation (MUCG)</b>  aims to explore and address the fundamental challenges in developing truly integrated MLLMs that can seamlessly understand and create multimodal content. We focus on three interconnected areas:</p>
+            <ul>
+              <li>Sophisticated multimodal comprehension, targeting robust understanding of complex visual content and semantic relationships.</li>
+              <li>Controllable content generation, addressing challenges in high-fidelity synthesis and cross-modal consistency.</li>
+              <li>Unified frameworks that enable semantic alignment between understanding and generation tasks.</li>
+            </ul>
+            <p align="justify">Unlike previous approaches that treat these capabilities separately, our workshop specifically targets their integration through MLLMs, fostering focused discussions on shared architectures, bidirectional knowledge transfer, and end-to-end training strategies.</p>
+            
+            <!-- Background & Motivation Section -->
+            <h4 style="margin-top: 40px; margin-bottom: 20px;">Background & Motivation</h4>
+            <p align="justify">Large Language Models (LLMs) have fundamentally transformed natural language processing, establishing new performance standards across various text-based tasks. The inherent multimodal nature of real-world information necessitates a unified approach that can seamlessly process and generate multimodal content. This requirement has driven the rapid development of Multimodal LLMs (MLLMs), which leverage large-scale pre-training and sophisticated architectures to enable integrated cross-modal reasoning.</p>
+
+            <p align="justify">In the field of MLLMs, there have been three sub-venues that have subsequently undergone extensive research attention. Initially, researchers built MLLMs which have demonstrated strong capabilities in basic visual understanding tasks like processing single/multiple images and understanding short videos. Advanced functionalities like 3D scene comprehension and multi-view analysis have also shown promising results. However, significant challenges remain in several core aspects: (1) achieving robust understanding of long-form video content, (2) extracting fine-grained semantic information from complex visual scenes, (3) detecting intricate visual relationships with limited supervision, and (4) handling open-domain visual question answering. These challenges are particularly pronounced in real-world scenarios requiring sophisticated visual reasoning and temporal-spatial understanding.</p>
+
+            <p align="justify">Later, more advances have enabled high-quality synthesis in specific domains, including text-to-image generation, controlled visual editing, and basic video synthesis. Notable progress has been made in areas like layout-controlled generation and cross-modal style transfer. However, several fundamental challenges persist: (1) ensuring semantic fidelity in complex visual generation, (2) maintaining consistency across multi-image generation tasks, (3) synthesizing realistic motion sequences in videos, and (4) creating contextually appropriate visual narratives. The field continues to face difficulties in achieving high-quality, controllable generation, particularly for dynamic and interactive content.</p>
+
+            <p align="justify">The ultimate goal of MLLMs is to achieve seamless integration of comprehension and generation capabilities within a unified framework, which is also the recent hot focus of MLLMs. Building the unified architecture of MLLMs is also the key research direction in the coming future in the MLLM venue. While initial attempts have shown promise, creating truly integrated systems remains a fundamental challenge. Current approaches have made progress in joint vision-language modeling and shared representation learning, but several critical barriers need to be addressed: (1) designing efficient architectures that enable fluid transitions between understanding and generation, (2) developing bidirectional knowledge transfer mechanisms between comprehension and generation tasks, (3) achieving robust vision-language alignment that serves both understanding and creation, and (4) implementing scalable end-to-end training strategies for unified models. The development of instruction-tuned models that can seamlessly switch between comprehension and generation modes remains crucial for real-world applications.</p>
+
+            <p align="justify">This specialized venue creates unique opportunities for focused discussions on MLLM integration challenges, complementing the broader multimedia research agenda of the main conference. By bringing together experts in this trending topic, we seek to catalyze breakthroughs in developing truly unified foundation multimodal systems that can both understand and create content seamlessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="target" class="target section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>Target Audience</h3>
+        <ul>
+          <li><strong>Academic researchers</strong>, including professors and graduate students working on multimodal intelligence, multimedia analysis, and cross-modal learning</li>
+          <li><strong>Industry practitioners</strong>, specifically data scientists and engineers developing multimodal applications and systems</li>
+          <li><strong>Broader participants</strong> from startups, government agencies, and interdisciplinary domains interested in latest multimodal AI advances</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="topics section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>Topics</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="topic-card">
+              <h4>MLLM for Multimodal Comprehension & Reasoning</h4>
+              <ul>
+                <li>Single/Multiple Image Understanding</li>
+                <li>Short/Long Video Understanding</li>
+                <li>3D Scene/Object Comprehension</li>
+                <li>Visual Document Understanding</li>
+                <li>Multi-view Scene Analysis</li>
+                <li>Complex Visual Reasoning</li>
+                <li>Temporal-Spatial Understanding</li>
+                <li>Cross-modal Knowledge Extraction</li>
+                <li>Visual Relationship Detection</li>
+                <li>Visual Question Answering</li>
+                <li>Visual Information Retrieval</li>
+                <li>Scene Graph Understanding</li>
+                <li>Cross-modal/Interleaved Reasoning</li>
+                <li>Multimodal Chain-of-Thought Reasoning</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="topic-card">
+              <h4>MLLM for Multimodal Content Generation</h4>
+              <ul>
+                <li>Text-to-Image/Video Synthesis</li>
+                <li>3D Content Generation</li>
+                <li>Motion Sequence Generation</li>
+                <li>Visual Story Generation</li>
+                <li>Multi-image Coherent Generation</li>
+                <li>Auto-regressive Visual Generation</li>
+                <li>Layout-to-Image Generation</li>
+                <li>Cross-modal Style Transfer</li>
+                <li>Visual Content Editing</li>
+                <li>Multimodal Dialogue Generation</li>
+                <li>Sequential Image Generation</li>
+                <li>Conditioned Visual Generation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="topic-card">
+              <h4>Unified MLLM Understanding and Generation</h4>
+              <ul>
+                <li>Unified Encoder-Decoder Frameworks</li>
+                <li>Joint Vision-Language Models</li>
+                <li>Agentic System</li>
+                <li>Autoregressive/Transfusion LLMs</li>
+                <li>Multi-task Learning Strategies</li>
+                <li>Cross-task Knowledge Transfer</li>
+                <li>Shared Representation Learning</li>
+                <li>Vision-Language Alignment</li>
+                <li>Multi-modal Fusion Methods</li>
+                <li>End-to-end Training Approaches</li>
+                <li>Instruction Tuning for Unification</li>
+                <li>Unified Tokenization Strategies</li>
+                <li>Bidirectional Generation Methods</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="schedule section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3 style="text-align: left;">Schedule</h3>
+        <table class="agenda-table">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Topic</th>
+              <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Duration</th>
+              <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Speaker</th>
+              <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Organization</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"><strong>Morning Schedule</strong></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Opening Address: Future of MLLMs</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">5 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Tat-Seng Chua</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">National University of Singapore</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Multimodal Understanding with LLMs</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">30 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Louis-Philippe Morency</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Carnegie Mellon University</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Visual Agentic Model</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">30 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Jiebo Luo</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">University of Rochester</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Coffee Break</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">10 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Panel Discussion: Unifying Understanding and Generation</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">30 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">All Speakers</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Cross-modal Learning with LLMs</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">30 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Wen-Huang Cheng</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">National Taiwan University</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Unified Vision-Language Models</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">30 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Chong-Wah Ngo</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Singapore Management University</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"><strong>Afternoon Schedule</strong></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session I: Multimodal Understanding1</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session I: Multimodal Understanding2</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">...</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session II: Content Generation1</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session II: Content Generation2</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">...</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session III: Unified Approaches1</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">Contributed Paper Session III: Unified Approaches2</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">15 min</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">TBD</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;">...</td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+              <td style="border: 1px solid #ddd; padding: 10px; text-align: left;"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>Activities</h3>
+        <p>We plan to hold a hybrid format of workshop, i.e., both onsite and online. For the onsite type, at least three organizers will attend in person to host the workshop. The workshop will include two major activities, the invited keynotes, and the paper presentations. We will invite keynote presentations, followed by accepted workshop presentations.</p>
+      </div>
+    </section>
+
+    <!-- Paper Submission Section -->
+    <section id="call" class="paper section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>Paper Submission and Reviewing</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="paper-info">
+              <h4>Submission Types</h4>
+              <ul>
+                <li>
+                  <h5>Technical Papers</h5>
+                  <p>Original research contributions that present novel ideas, methods, or results in the area of multimodal large language models for unified comprehension and generation. These papers should not exceed 8 pages (plus unlimited pages for references).</p>
+                </li>
+                <li>
+                  <h5>Perspective Papers</h5>
+                  <p>Position papers that discuss new perspectives, challenges, or future directions in the field. These should also be up to 8 pages in length.</p>
+                </li>
+                <li>
+                  <h5>Demonstration Papers</h5>
+                  <p>Descriptions of working systems, tools, or demonstrations that showcase innovative applications of MLLMs. These papers should be up to 4 pages long.</p>
+                </li>
+                <li>
+                  <h5>Extended Abstracts</h5>
+                  <p>Non-archival extended abstracts of previously published work or work in progress. These should be up to 2 pages in length.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="paper-info">
+              <h4>Important Guidelines</h4>
+              <ul>
+                <li>
+                  <h5>Formatting</h5>
+                  <p>All submissions must follow the ACM two-column conference format. Templates are available for both LaTeX and Word.</p>
+                </li>
+                <li>
+                  <h5>Double-Blind Review</h5>
+                  <p>Submissions must be anonymized to ensure a fair review process. Authors should not identify themselves in the paper.</p>
+                </li>
+                <li>
+                  <h5>Supplementary Material</h5>
+                  <p>Authors may submit supplementary material (e.g., code, data, videos) up to 100MB. This should be referenced in the paper but not included in the page limit.</p>
+                </li>
+                <li>
+                  <h5>Submission System</h5>
+                  <p>Papers must be submitted through the OpenReview platform. Create an account and follow the submission guidelines carefully.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="paper-process">
+          <h4>Reviewing Process</h4>
+          <p>All submissions will undergo a rigorous double-blind peer review process. Each paper will be evaluated by at least three members of the program committee based on:</p>
+          <ul>
+            <li>Relevance to MLLM for unified comprehension and generation</li>
+            <li>Originality and significance of contributions</li>
+            <li>Technical quality and depth</li>
+            <li>Clarity of presentation</li>
+            <li>Potential impact on the field</li>
+          </ul>
+          <p>Authors will receive detailed feedback and have the opportunity to respond to reviews before final decisions are made.</p>
+        </div>
+        <div class="paper-deadlines">
+          <h4>Important Dates</h4>
+          <ul>
+            <li>Submission Deadline: March 31, 2025</li>
+            <li>Notification of Acceptance: April 30, 2025</li>
+            <li>Camera-Ready Deadline: May 16, 2025</li>
+          </ul>
+          <p style="color: red;">Please note that these deadlines are strict and will not be extended.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="organizer" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Organization Team</h2>
+      </div><!-- End Section Title -->
+
+
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><img src="assets/img/organizer/jijiayi.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><h4>Jiayi Ji</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="http://haofei.vip/"><img src="assets/img/organizer/feihao.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="http://haofei.vip/"><h4>Hao Fei</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="https://openreview.net/profile?id=~Gen_Luo1"><img src="assets/img/organizer/luogen.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://openreview.net/profile?id=~Gen_Luo1"><h4>Gen Luo</h4></a>
+              <span>Shanghai Artificial Intelligence Laboratory</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://yaotingwangofficial.github.io"><img src="assets/img/organizer/wangyaoting.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://yaotingwangofficial.github.io"><h4>Yaoting Wang</h4></a>
+              <span>University of Edinburgh</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://zheng-lab.cecs.anu.edu.au/"><img src="assets/img/organizer/zhengliang.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://zheng-lab.cecs.anu.edu.au/"><h4>Liang Zheng</h4></a>
+              <span>Australian National University</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://scholar.google.com/citations?user=fXN3dl0AAAAJ&hl=zh-CN"><img src="assets/img/organizer/linjiawei.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://scholar.google.com/citations?user=fXN3dl0AAAAJ&hl=zh-CN"><h4>Chia-Wen Lin</h4></a>
+              <span>National Tsing Hua University</span>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://yanshuicheng.info"><img src="assets/img/organizer/yanshuicheng.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://yanshuicheng.info"><h4>Shuicheng Yan</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://mac.xmu.edu.cn/rrji_en/"><img src="assets/img/organizer/jirongrong.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://mac.xmu.edu.cn/rrji_en/"><h4>Rongrong Ji</h4></a>
+              <span>Xiamen University</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><img src="assets/img/organizer/caidacheng.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><h4>Tat-Seng Chua</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container copyright text-center mt-4">
+      <p>© Copyright MUCG 2025 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
