@@ -36,16 +36,17 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #00fff3, #0080b3);
     border: none;
-    border-radius: 8px;
+    border-radius: 40px;
     box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+    width: 300px;
   }
 
   .custom-btn:hover {
-    background: linear-gradient(135deg, #0056b3, #003f7f);
+    background: linear-gradient(135deg, #089a94, #005f85);
     transform: translateY(-3px);
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
   }
@@ -111,8 +112,8 @@
     .team .member-img {
       overflow: hidden;
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      /*width: 200px;*/
+      /*height: 200px;*/
       margin: 0 auto 15px;
     }
 
@@ -132,6 +133,42 @@
       color: #777;
       font-size: 14px;
     }
+
+    /* Team Section Styles */
+    .speakers .section-title h2 {
+      color: #ff8c00;
+      text-align: center; /* Center align the title */
+      margin-bottom: 30px;
+    }
+
+    .speakers .member {
+      margin-bottom: 30px;
+    }
+
+    .speakers .member-img {
+      overflow: hidden;
+      border-radius: 50%;
+      /*width: 200px;*/
+      /*height: 200px;*/
+      margin: 0 auto 15px;
+    }
+
+    .speakers .member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .speakers .member-info h4 {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .speakers .member-info span {
+      display: block;
+      color: #777;
+      font-size: 14px;
+    }
   </style>
 </head>
 
@@ -147,12 +184,14 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="./" class="active">Overview</a></li>
-          <li><a href="./#target">Target Audience</a></li>
+<!--          <li><a href="./#target">Target Audience</a></li>-->
           <li><a href="./#topics">Topics</a></li>
           <li><a href="./#agenda">Schedule</a></li>
-          <li><a href="./#activities">Activities</a></li>
-          <li><a href="./#call">Cal for Papers</a></li>
-          <li><a href="./#organizer">Organization Team</a></li>
+          <li><a href="./#speakers">Speaker</a></li>
+          <li><a href="./#call">Cal4Paper</a></li>
+          <li><a href="./#challenge">Challenge</a></li>
+          <li><a href="./#organizer">Organization</a></li>
+          <li><a href="./#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -170,9 +209,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10" style="margin-left: 50px;margin-bottom: -50px;">
-            <h1 data-aos="fade-up" data-aos-delay="100">MUCG @ ACM 2025</h1>
+            <h1 data-aos="fade-up" data-aos-delay="100">MUCG @ <a href="https://2025.acmmm.org/" target="_blank">ACM 2025</a></h1>
             <br>
-            <h3 data-aos="fade-up" data-aos-delay="100">The 1st International Workshop on MLLM for Unified Comprehension and Generation</h3>
+            <h3 data-aos="fade-up" data-aos-delay="100" style="font-size: 25px">The 1<sup>st</sup> International Workshop on MLLM for Unified Comprehension and Generation</h3>
+<!--            <h3 data-aos="fade-up" data-aos-delay="100">Unified Comprehension and Generation</h3>-->
             <br>
             <p data-aos="fade-up" data-aos-delay="200">Dublin, Ireland</p>
             <p data-aos="fade-up" data-aos-delay="200">October 27-October 31, 2025</p>
@@ -183,13 +223,13 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section light-background">
+    <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100" style="    margin-top: -30px;">
         <div class="row align-items-xl-center gy-2">
 
           <div class="content">
-            <h3 style="margin-bottom: 30px;">Workshop Introduction</h3>
+            <h3 style="margin-bottom: 10px;border-bottom:None">Workshop Introduction</h3>
             <p align="justify">As Multimodal Large Language Models (MLLMs) continue to advance, there is a growing need to bridge the gap between their comprehension and generation capabilities within unified frameworks. This workshop <b>MLLM for Unified Comprehension and Generation (MUCG)</b>  aims to explore and address the fundamental challenges in developing truly integrated MLLMs that can seamlessly understand and create multimodal content. We focus on three interconnected areas:</p>
             <ul>
               <li>Sophisticated multimodal comprehension, targeting robust understanding of complex visual content and semantic relationships.</li>
@@ -205,11 +245,13 @@
     <!-- Topics Section -->
     <section id="topics" class="topics section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h3>Topics</h3>
+        <h3>Call4Paper Topics</h3>
+        <p>We welcome paper submissions on all topics related to unified MLLMs, including but not limited to:
+        </p>
         <div class="row">
           <div class="col-md-4">
             <div class="topic-card">
-              <h4>MLLM for Multimodal Comprehension & Reasoning</h4>
+              <h4 style="font-weight: 700;">MLLM for Multimodal Comprehension & Reasoning</h4>
               <ul>
                 <li>Single/Multiple Image Understanding</li>
                 <li>Short/Long Video Understanding</li>
@@ -230,7 +272,7 @@
           </div>
           <div class="col-md-4">
             <div class="topic-card">
-              <h4>MLLM for Multimodal Content Generation</h4>
+              <h4 style="font-weight: 700;">MLLM for Multimodal Content Generation</h4>
               <ul>
                 <li>Text-to-Image/Video Synthesis</li>
                 <li>3D Content Generation</li>
@@ -249,7 +291,7 @@
           </div>
           <div class="col-md-4">
             <div class="topic-card">
-              <h4>Unified MLLM Understanding and Generation</h4>
+              <h4 style="font-weight: 700;">Unified MLLM Understanding and Generation</h4>
               <ul>
                 <li>Unified Encoder-Decoder Frameworks</li>
                 <li>Joint Vision-Language Models</li>
@@ -271,9 +313,13 @@
       </div>
     </section>
 
-    <section id="agenda" class="schedule section light-background">
+    <section id="agenda" class="schedule section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h3 style="text-align: left;">Schedule</h3>
+        <p>We plan to hold a hybrid format of workshop, i.e., both onsite and online. For the onsite type, at least three organizers will attend in person to host the workshop. The workshop will include two major activities, the invited keynotes, and the paper presentations. We will invite keynote presentations, followed by accepted workshop presentations.</p>
+
+        <p>The following schedules will be determined later.</p>
+
         <table class="agenda-table">
           <thead>
             <tr>
@@ -397,21 +443,58 @@
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="activities section light-background">
+    <section id="speakers" class="speakers section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h3>Activities</h3>
-        <p>We plan to hold a hybrid format of workshop, i.e., both onsite and online. For the onsite type, at least three organizers will attend in person to host the workshop. The workshop will include two major activities, the invited keynotes, and the paper presentations. We will invite keynote presentations, followed by accepted workshop presentations.</p>
+        <h3>Keynote Speakers</h3>
       </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 20px">
+        <p>The invited speakers will be determined later. Stay tuned!</p>
+        <div class="row gy-3">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <a href="#" target="_blank"><img src="assets/img/speaker/Unknown_person.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="#" target="_blank"><h4>Speaker-1</h4></a>
+              <span>Institution</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="#" target="_blank"><img src="assets/img/speaker/Unknown_person.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="#" target="_blank"><h4>Speaker-2</h4></a>
+              <span>Institution</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <a href="#" target="_blank"><img src="assets/img/speaker/Unknown_person.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="#" target="_blank"><h4>Speaker-3</h4></a>
+              <span>Institution</span>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+      </div>
+
     </section>
 
     <!-- Paper Submission Section -->
-    <section id="call" class="paper section light-background">
+    <section id="call" class="paper section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h3>Paper Submission and Reviewing</h3>
         <div class="row">
           <div class="col-md-6">
             <div class="paper-info">
-              <h4>Submission Types</h4>
+              <h4 style="font-weight: 600;">Submission Types</h4>
               <ul>
                 <li>
                   <h5>Technical Papers</h5>
@@ -434,11 +517,11 @@
           </div>
           <div class="col-md-6">
             <div class="paper-info">
-              <h4>Important Guidelines</h4>
+              <h4 style="font-weight: 600;">Important Guidelines</h4>
               <ul>
                 <li>
                   <h5>Formatting</h5>
-                  <p>Templates are available from the <a href="https://www.acm.org/publications/proceedings-template">ACM Website</a> for both LaTeX and Word.</p>
+                  <p>Templates are available from the <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM Website</a> for both LaTeX and Word.</p>
                 </li>
                 <li>
                   <h5>Double-Blind Review</h5>
@@ -449,12 +532,6 @@
                   <p>Authors may submit supplementary material (e.g., code, data, videos) up to 100MB. This should be referenced in the paper but not included in the page limit.</p>
                 </li>
               </ul>
-              <div class="submission-button mt-5 text-center">
-                <a href="https://openreview.net/group?id=acmmm.org/ACMMM/2025/Workshop/MUGC" 
-                   class="btn btn-primary btn-lg custom-btn">
-                  <i class="fas fa-file-upload"></i> Submit Your Paper
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -463,13 +540,19 @@
             <div class="paper-info">
               <p>
                 <i class="fas fa-award" style="color: #e74c3c; margin-right: 10px;"></i>
-                We will select from the accepted papers the <strong>Best Paper Award</strong>, which will be announced during the workshop.
+                We will select from the accepted papers the <strong style="color: red;">Best Paper Award</strong>, which will be announced during the workshop.
               </p>
             </div>
           </div>
         </div>
-        <div class="paper-process">
-          <h4>Reviewing Process</h4>
+        <div class="submission-button text-center" style="margin-top: 10px;">
+          <a href="https://openreview.net/group?id=acmmm.org/ACMMM/2025/Workshop/MUCG" target="_blank"
+             class="btn btn-primary btn-lg custom-btn">
+            <i class="fas fa-file-upload"></i> Submit Your Paper
+          </a>
+        </div>
+        <div class="paper-process" style="margin-top: 30px;">
+          <h4 style="font-weight: 600;">Reviewing Process</h4>
           <p>All submissions will undergo a rigorous double-blind peer review process. Each paper will be evaluated by at least three members of the program committee based on:</p>
           <ul>
             <li>Relevance to MLLM for unified comprehension and generation</li>
@@ -479,8 +562,8 @@
             <li>Potential impact on the field</li>
           </ul>
         </div>
-        <div class="paper-deadlines">
-          <h4>Important Dates</h4>
+        <div class="paper-deadlines" style="margin-top: 30px;">
+          <h4 style="font-weight: 600;">Workshop Important Dates</h4>
           <ul>
             <li>Paper Submission Start: 08 April, 2025 (AoE)</li>
             <li>Paper Submission Deadline: 11 July, 2025 (AOE)</li>
@@ -492,46 +575,158 @@
       </div>
     </section>
 
+
+    <!-- Challenge Section -->
+    <section id="challenge" class="challenge section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>Challenge</h3>
+      </div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 30px">
+        <h4>🏆 General-Level of Multimodal Generalist</h4>
+        <p style="text-align: justify">We are excited to announce the <a href="https://generalist.top/leaderboard" target="_blank">General-Level of Multimodal Generalist</a> Challenge,
+          hosted in conjunction with the MUCG'25 workshop. This open challenge invites researchers and practitioners to develop
+          and evaluate MLLMs/Agents that demonstrate generalist capabilities across diverse tasks and modalities.
+        </p>
+
+        <div class="img" style="text-align: center;margin-top: 50px">
+          <img src="assets/img/challenge/General-Level.png" style="width: 60%;" class="img-fluid" alt="leaderboard-scope">
+        </div>
+
+        <p style="text-align: justify">
+          The challenge is based on the <a href="https://generalist.top" target="_blank">General-Level</a> platform, which provides a comprehensive evaluation suite—<b>General-Level</b>;
+          and an extensive benchmark—<b>General-Bench</b>—for assessing the generalization abilities of MLLMs.
+          Participants will have the opportunity to test their models on a wide range of tasks that require unified comprehension and generation across multiple modalities.
+        </p>
+
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 40px">
+        <h4>🎯 Challenge Tracks</h4>
+        <div class="img" style="text-align: center;margin-top: 50px">
+          <img src="assets/img/challenge/leaderboard-scope.png" style="width: 60%;" class="img-fluid" alt="leaderboard-scope">
+        </div>
+        <p style="text-align: justify">
+          The challenge comprises four distinct tracks, each focusing on different aspects of multimodal generalization:
+        </p>
+        <ul >
+          <li><b>👑 Scope-A: Full-spectrum Hero</b>: Full-spectrum leaderboard covering all modalities and tasks under General-Level, for highly capable, general-purpose multimodal models.
+          </li>
+          <li><b>💎 Scope-B: Modality-specific Unified Hero</b>: Modality-specific leaderboards focusing on single modality or partially joint modality (e.g., image, video, audio, 3D) for modality-wise generalists.
+          </li>
+          <li><b>💪 Scope-C: Comprehension/Generation Hero</b>:
+            Leaderboards categorized by comprehension vs. generation tasks within each modality. Lower entry barrier for early-stage or lightweight models.
+          </li>
+          <li><b>🛠️ Scope-D: Skill-specific Hero</b>:
+            Fine-grained leaderboards focused on specific task clusters (e.g., VQA, Captioning, Speech Recognition), ideal for partial generalists.
+          </li>
+        </ul>
+        <p style="text-align: justify">
+          Each track is designed to evaluate specific capabilities of MLLMs,
+          encouraging the development of models that can generalize effectively across different types of tasks and data.
+        </p>
+      </div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 40px">
+        <div class="paper-deadlines" style="margin-top: 30px;">
+          <h4 style="font-weight: 600;">📅 Challenge Important Dates</h4>
+          <ul>
+            <li>Challenge Registration Start: 20 May, 2025 (AoE)</li>
+            <li>Challenge Registration End: 1 July, 2025 (AoE)</li>
+            <li>Notification of Rankings: 20 July, 2025 (AoE)</li>
+            <li>Challenge Submission Deadline: 30 July, 2025 (AOE)</li>
+            <li>Paper Camera-ready Submission: 11 August, 2025 (AoE) </li>
+            <li>Workshop dates: 27-28 October, 2025 (AoE)</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 40px">
+        <div class="paper-deadlines" style="margin-top: 30px;">
+          <h4 style="font-weight: 600;">📝 Participation Guidelines</h4>
+          <ul>
+            <li><b>Registration</b>: Interested participants should register by filling out the <a href="#" target="_blank">Google Form</a></li>
+            <li><b>Data and Tools</b>: Go to the official <a href="https://generalist.top/leaderboard" target="_blank">Leaderboard site</a> for obtaining the datasets as well as the evaluation suite.</li>
+            <li><b>Submission</b>: Participants must submit their model predictions at <a href="https://generalist.top/submit" target="_blank">Submit Page</a> by the submission deadline for evaluation.</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-top: 40px">
+        <div class="paper-deadlines" style="margin-top: 30px;">
+          <h4 style="font-weight: 600;">🏅 Awards and Recognition</h4>
+          <p style="text-align: justify">
+            Top-performing teams in each track will receive <b style="color: red">Cash awards</b> and <b style="color: red">Certificate</b>.
+            Outstanding teams will be invited to write technical paper for inclusion in the MUCG'25 workshop proceedings,
+            and present it at the  workshop.
+          </p>
+
+          <p style="text-align: justify">
+            Learn more about the challenge by the <a href="https://generalist.top" target="_blank">Multimodal-Generalist website</a> and the <a href="https://arxiv.org/abs/2505.04620" target="_blank">paper</a>.
+          </p>
+
+          <p style="text-align: justify">
+            For further inquiries, please contact the challenge organizers at <a href="mailto:mugc-workshopmm25@googlegroups.com" target="_blank">mugc-workshopmm25@googlegroups.com</a>.
+          </p>
+
+        </div>
+      </div>
+
+
+
+    </section><!-- /Challenge Section -->
+
+
     <!-- Team Section -->
     <section id="organizer" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Organization Team</h2>
+        <h3>Organization Team</h3>
       </div><!-- End Section Title -->
 
-
-
       <div class="container">
+        <h2 style="
+            text-align: center;
+            margin-bottom: 26px;
+            font-size: 27px;
+            font-weight: 500;
+            color: crimson;
+        ">Program Committee</h2>
 
         <div class="row gy-5">
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><img src="assets/img/organizer/jijiayi.jpg" class="img-fluid"></a>
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1" target="_blank"><img src="assets/img/organizer/jijiayi.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-              <a href="https://openreview.net/profile?id=~Jiayi_Ji1"><h4>Jiayi Ji</h4></a>
+              <a href="https://openreview.net/profile?id=~Jiayi_Ji1" target="_blank"><h4>Jiayi Ji</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <a href="http://haofei.vip/"><img src="assets/img/organizer/feihao.jpg" class="img-fluid"></a>
+              <a href="http://haofei.vip/" target="_blank"><img src="assets/img/organizer/feihao.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-              <a href="http://haofei.vip/"><h4>Hao Fei</h4></a>
+              <a href="http://haofei.vip/" target="_blank"><h4>Hao Fei</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <a href="https://openreview.net/profile?id=~Gen_Luo1"><img src="assets/img/organizer/luogen.jpg" class="img-fluid"></a>
+              <a href="https://openreview.net/profile?id=~Gen_Luo1" target="_blank"><img src="assets/img/organizer/luogen.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-              <a href="https://openreview.net/profile?id=~Gen_Luo1"><h4>Gen Luo</h4></a>
+              <a href="https://openreview.net/profile?id=~Gen_Luo1" target="_blank"><h4>Gen Luo</h4></a>
               <span>Shanghai Artificial Intelligence Laboratory</span>
             </div>
           </div><!-- End Team Member -->
@@ -539,10 +734,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://yaotingwangofficial.github.io"><img src="assets/img/organizer/wangyaoting.jpg" class="img-fluid"></a>
+            <a href="https://yaotingwangofficial.github.io" target="_blank"><img src="assets/img/organizer/wangyaoting.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://yaotingwangofficial.github.io"><h4>Yaoting Wang</h4></a>
+            <a href="https://yaotingwangofficial.github.io" target="_blank"><h4>Yaoting Wang</h4></a>
               <span>University of Edinburgh</span>
             </div>
           </div><!-- End Team Member -->
@@ -551,24 +746,22 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://zheng-lab.cecs.anu.edu.au/"><img src="assets/img/organizer/zhengliang.jpg" class="img-fluid"></a>
+            <a href="https://zheng-lab-anu.github.io/" target="_blank"><img src="assets/img/organizer/zhengliang.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://zheng-lab.cecs.anu.edu.au/"><h4>Liang Zheng</h4></a>
+            <a href="https://zheng-lab-anu.github.io/" target="_blank"><h4>Liang Zheng</h4></a>
               <span>Australian National University</span>
             </div>
           </div><!-- End Team Member -->
 
 
 
-
-
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://scholar.google.com/citations?user=fXN3dl0AAAAJ&hl=zh-CN"><img src="assets/img/organizer/linjiawei.jpg" class="img-fluid"></a>
+            <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank"><img src="assets/img/organizer/linjiawei.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://scholar.google.com/citations?user=fXN3dl0AAAAJ&hl=zh-CN"><h4>Chia-Wen Lin</h4></a>
+            <a href="https://www.ee.nthu.edu.tw/cwlin/" target="_blank"><h4>Chia-Wen Lin</h4></a>
               <span>National Tsing Hua University</span>
             </div>
           </div>
@@ -576,10 +769,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://yanshuicheng.info"><img src="assets/img/organizer/yanshuicheng.jpg" class="img-fluid"></a>
+            <a href="https://yanshuicheng.info" target="_blank"><img src="assets/img/organizer/yanshuicheng.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://yanshuicheng.info"><h4>Shuicheng Yan</h4></a>
+            <a href="https://yanshuicheng.info" target="_blank"><h4>Shuicheng Yan</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
@@ -590,10 +783,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://mac.xmu.edu.cn/rrji_en/"><img src="assets/img/organizer/jirongrong.jpg" class="img-fluid"></a>
+            <a href="https://mac.xmu.edu.cn/rrji_en/" target="_blank"><img src="assets/img/organizer/jirongrong.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://mac.xmu.edu.cn/rrji_en/"><h4>Rongrong Ji</h4></a>
+            <a href="https://mac.xmu.edu.cn/rrji_en/" target="_blank"><h4>Rongrong Ji</h4></a>
               <span>Xiamen University</span>
             </div>
           </div><!-- End Team Member -->
@@ -602,10 +795,10 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><img src="assets/img/organizer/caidacheng.jpg" class="img-fluid"></a>
+            <a href="https://www.chuatatseng.com/" target="_blank"><img src="assets/img/organizer/caidacheng.jpg" class="img-fluid"></a>
             </div>
             <div class="member-info text-center">
-            <a href="https://scholar.google.com.sg/citations?user=Z9DWCBEAAAAJ&hl=en"><h4>Tat-Seng Chua</h4></a>
+            <a href="https://www.chuatatseng.com/" target="_blank"><h4>Tat-Seng Chua</h4></a>
               <span>National University of Singapore</span>
             </div>
           </div><!-- End Team Member -->
@@ -615,13 +808,100 @@
 
       </div>
 
+
+      <div class="container" style="
+          margin-top: 30px;
+      ">
+        <h2 style="
+            text-align: center;
+            margin-bottom: 26px;
+            font-size: 27px;
+            font-weight: 500;
+            color: crimson;
+        ">Challenge Committee</h2>
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="https://sqwu.top/" target="_blank"><img src="assets/img/organizer/sqwu.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://sqwu.top/" target="_blank"><h4>Shengqiong Wu</h4></a>
+              <span>National University of Singapore</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <a href="https://infaaa.github.io/" target="_blank"><img src="assets/img/organizer/Jinfa.jpg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://infaaa.github.io/" target="_blank"><h4>Jinfa Huang</h4></a>
+              <span>University of Rochester</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <a href="https://dwan.ch/" target="_blank"><img src="assets/img/organizer/daoan.jpeg" class="img-fluid"></a>
+            </div>
+            <div class="member-info text-center">
+              <a href="https://dwan.ch/" target="_blank"><h4>Daoan Zhang</h4></a>
+              <span>University of Rochester</span>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+
+
     </section><!-- /Team Section -->
+
+
+    <!-- Program Committee Section -->
+    <section id="pc" class="pc section light-background">
+
+      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+        <h3>Program Committee</h3>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <h4 style="color: #de3c3a">TBD</h4>
+          <h5>We are hiring Program Committee members, filling out the <a href="#" target="_blank">Google Form</a> for nomination, if interested.
+<!--            For email us to nominate: <a href="mailto:mugc-workshopmm25@googlegroups.com">mugc-workshopmm25@googlegroups.com</a>.-->
+          </h5>
+        </div>
+      </div>
+
+
+    </section><!-- Program Committee Section -->
+
+
+    <!-- Challenge Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+        <h3>Contact</h3>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <h5>Join and post at our <a href="https://groups.google.com/g/mugc-workshopmm25" target="_blank">Google Group</a>!</h5>
+          <h5>Email the organizers at <a href="mailto:mugc-workshopmm25@googlegroups.com" target="_blank">mugc-workshopmm25@googlegroups.com</a>.</h5>
+        </div>
+      </div>
+
+    </section><!-- /Challenge Section -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container copyright text-center mt-4">
-      <p>© Copyright MUCG 2025 All Rights Reserved</p>
+  <footer id="footer" class="footer position-relative light-background" style="padding-bottom: 0px;">
+    <div class="container copyright text-center mt-4" style="background-color:transparent">
+      <p>© Copyright MUCG 2025 | All Rights Reserved</p>
     </div>
   </footer>
 
