@@ -265,20 +265,21 @@
             </div>
           </div>
     
-          <!-- 右侧：二维码图像（仅大屏显示） -->
-          <div class="col-lg-2 text-center d-none d-lg-block">
+          <!-- 右侧：二维码图像（仅大屏显示，垂直居中 + 美学优化） -->
+          <div class="col-lg-2 d-none d-lg-flex flex-column align-items-center justify-content-center"
+               style="background-color: #f9f9f9; border-radius: 8px; padding: 16px; height: 100%; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);">
             <img src="assets/img/wechat_group.jpg" alt="WeChat Group"
                  class="img-fluid rounded shadow-sm"
-                 style="max-width: 25%;">
-            <p style="font-size: 0.85rem; color: #666; margin-top: 8px;">Scan to join our WeChat group</p>
+                 style="max-width: 50%;">
+            <p style="font-size: 0.7rem; color: #666; margin-top: 8px;">Scan to join our WeChat group</p>
           </div>
-          
-          <!-- 移动端二维码显示（可选） -->
+    
+          <!-- 移动端二维码显示（小尺寸） -->
           <div class="text-center d-lg-none mt-4">
             <img src="assets/img/wechat_group.jpg" alt="WeChat Group"
                  class="img-fluid rounded shadow-sm"
                  style="max-width: 50px;">
-            <p style="font-size: 0.85rem; color: #666;">Scan to join our WeChat group</p>
+            <p style="font-size: 0.7rem; color: #666;">Scan to join our WeChat group</p>
           </div>
 
     
